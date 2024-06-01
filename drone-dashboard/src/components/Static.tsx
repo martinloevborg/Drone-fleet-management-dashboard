@@ -141,7 +141,7 @@ export default function Static() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://raw.githubusercontent.com/martinloevborg/martinloevborg.github.io/main/my-react-app/src/test/demostration/newdata.csv"
+          "https://raw.githubusercontent.com/martinloevborg/Drone-fleet-management-dashboard/main/drone-dashboard/src/assets/data.csv"
         );
         const csvData = await response.text();
         console.log(csvData);
@@ -394,7 +394,7 @@ export default function Static() {
                     tempData.theta,
                     "Spd(m/s)",
                     batteryData.theta,
-                    "Msg(N)",
+                    "Msg(N/10)",
                     "Bat(%)",
                     tempData.theta,
                   ],
@@ -421,7 +421,7 @@ export default function Static() {
                     "Temp(°C)",
                     "Spd(m/s)",
                     "Bat(V)",
-                    "Msg(N)",
+                    "Msg(N/10)",
                     "Bat(%)",
                     "Temp(°C)",
                   ],
