@@ -1,0 +1,390 @@
+/*Containers*/
+.container {
+  flex-direction: row;
+}
+
+.container2 {
+  flex-direction: column;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+}
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.twoplotcontainer {
+  display: inline-block;
+  padding: 20px 30px;
+  color: black;
+  margin: 20px auto;
+  border: 2px solid #4b83cd;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 250px;
+}
+
+.twoplotcontainer2 {
+  display: inline-block;
+  padding: 20px 30px;
+  color: black;
+  margin: 20px auto;
+  border: 2px solid #4b83cd;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 250px;
+}
+
+.oneplotcontainer {
+  display: inline-block;
+  padding: 20px 30px;
+  color: black;
+  margin: 20px auto;
+  border: 2px solid #4b83cd;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 600px;
+}
+
+/*Tags*/
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/*Button for maintenance check*/
+button {
+  font-size: 16px;
+  padding: 5px 20px;
+  border: rgb(232, 239, 243) 1px solid;
+  border-radius: 10px;
+  background-color: #4b83cd;
+  width: 180px;
+  box-shadow: 0px 0px 2px 0px #282323;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button-image {
+  height: 40px;
+  text-align: left;
+  flex-direction: "column";
+  float: 'left';
+  margin-right: '20px'
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+/*Toggle for switching pages*/
+.toogle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 21px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+
+.toogle-switch input:checked+.slider {
+  background-color: #4b83cd;
+}
+
+
+.toogle-switch input:checked+.slider:before {
+  transform: translateX(25px);
+}
+
+/*Radio buttons for color choice*/
+.radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.radio input[type="radio"] {
+  display: none;
+}
+
+.radio .radio-label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.radio .radio-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.radio input[type="radio"]:checked+.radio-label::before {
+  background-color: white;
+  border: 2px solid #4b83cd;
+}
+
+.radio input[type="radio"]:checked+.radio-label::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #4b83cd;
+  border-radius: 50%;
+}
+
+fieldset {
+  border: 2px solid #4b83cd;
+  border-radius: 10px;
+  width: 50px;
+  height: 70px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Checkboxes id selecting*/
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container label {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+/*Dropdown for time range*/
+.dropdown {
+  margin-left: 8px;
+  padding: 4px;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+/*Titel*/
+.dashboard-title-container {
+  display: inline-block;
+  padding: 20px 30px;
+  color: black;
+  margin: 20px auto;
+  border-bottom: 2px solid #4b83cd;
+}
+
+
+.dashboard-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.title-image {
+  height: 40px;
+  text-align: left;
+  flex-direction: "column";
+  float: 'left';
+  margin-right: '20px'
+}
+
+/*Subtitel*/
+.dashboard-subtiletitle-container {
+  display: inline-block;
+  padding: 20px 30px;
+  color: black;
+  margin: 20px auto;
+  border: 2px solid #4b83cd;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 550px;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.icon {
+  font-size: 2em;
+  margin: 0 10px;
+  height: 40px;
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #4b83cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.circle-content {
+  text-align: center;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 16px;
+}
+
+
+
+ /* Responsiveness */
+ @media (max-width: 1200px) {
+  .twoplotcontainer, .twoplotcontainer2, .oneplotcontainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dashboard-subtiletitle-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .controls-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .error-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  button {
+    width: 100%;
+  }
+  .dashboard-title {
+    font-size: 1.5em;
+  }
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+  .value {
+    font-size: 18px;
+  }
+  .label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .twoplotcontainer, .twoplotcontainer2, .oneplotcontainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .dashboard-title-container, .dashboard-subtiletitle-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .circle {
+    width: 60px;
+    height: 60px;
+  }
+  .value {
+    font-size: 14px;
+  }
+  .label {
+    font-size: 12px;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 0.8em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
