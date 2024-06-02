@@ -18,7 +18,7 @@ export default function Home() {
       <div className="container3">
       <img src={logo} className="title-image"></img>
       <div className="dashboard-title-container">
-        <h1 className="dashboard-title">Drone flight history dashboard</h1>
+        <h1 className="dashboard-title">Drone Flight History Dashboard</h1>
         </div>
         {/* Toggle checkbox */}
         <div>

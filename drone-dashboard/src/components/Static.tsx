@@ -236,7 +236,6 @@ export default function Static() {
                 xaxis: { title: "Time(TS) " },
                 yaxis: { title: "Altitude(m)" },
               }}
-              //config={{responsive: true}}
             />
             <Plot
               data={[
